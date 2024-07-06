@@ -80,5 +80,5 @@ Puedes utilizar esta página para explorar y probar las API proporcionadas por e
 Se incluye un archivo llamado `Vdg.postman_collection.json`, el cual contiene pruebas de las APIs que puedes importar en Postman.
 
 ## Manual de usuario 📕
-Para obtener una guia detallada de como funciona el sistema porfavopr leea el manual de usuario que subimos a esta repositorio.
+Para obtener una guia detallada de como funciona el sistema porfavor leea el manual de usuario que subimos a esta repositorio.
 
