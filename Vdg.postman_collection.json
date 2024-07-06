@@ -1,0 +1,1953 @@
+{
+	"info": {
+		"_postman_id": "773b31e6-7844-45aa-bfa9-0f0451eec981",
+		"name": "Vdg",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Boton antipanico",
+			"item": [
+				{
+					"name": "alertar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fecha\": \"2024-03-27T00:00:00\", \r\n  \"idBotonAntipanico\": 10,\r\n  \"idDamnificada\": 10,\r\n  \"latitud\": 0,\r\n  \"longitud\": 0\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/BotonAntipanico/victima1@victima1.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"BotonAntipanico",
+								"victima1@victima1.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contacto",
+			"item": [
+				{
+					"name": "guardar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Contacto/victima1@victima1.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Contacto",
+								"victima1@victima1.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getContactosDamnificada",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"apellido\": \"Gómez\",\r\n  \"email\": \"victima1@victima1.com\",\r\n  \"idContacto\": 23,\r\n  \"idDamnificada\": 4,\r\n  \"nombre\": \"María2\",\r\n  \"relacion\": \"Amiga\",\r\n  \"telefono\": \"123456789\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Contacto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Contacto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Contacto/23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Contacto",
+								"23"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Direccion",
+			"item": [
+				{
+					"name": "getPersonasDTO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Direccion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Direccion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"altura\": \"1234\",\r\n  \"calle\": \"Avenida Principal\",\r\n  \"departamento\": \"2A\",\r\n  \"idDireccion\": 12,\r\n  \"idLocalidad\": 101,\r\n  \"piso\": \"2\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Direccion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Direccion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Direccion/12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Direccion",
+								"12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Form Persona",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/FormABMPersona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"FormABMPersona"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"persona\": {\r\n            \"idPersona\": 10,\r\n            \"nombre\": \"Agresor10\",\r\n            \"apellido\": \"Agresor10\",\r\n            \"dni\": \"1012701010\",\r\n            \"telefono\": \"100\",\r\n            \"fechaNacimiento\": \"1986-03-04\",\r\n            \"idDireccion\": 2,\r\n            \"idUsuario\": 2\r\n        },\r\n        \"usuario\": {\r\n            \"idUsuario\": 2,\r\n            \"email\": \"agresor120@agresor120.com\",\r\n            \"contrasena\": \"a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3\",\r\n            \"rolDeUsuario\": \"VICTIMARIO\"\r\n        },\r\n        \"direccion\": {\r\n            \"idDireccion\": 2,\r\n            \"calle\": \"Calle\",\r\n            \"altura\": \"43102\",\r\n            \"piso\": \"7\",\r\n            \"departamento\": \"C\",\r\n            \"idLocalidad\": 2156\r\n        },\r\n        \"foto\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/FormABMPersona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"FormABMPersona"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/FormABMPersona/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"FormABMPersona",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Foto identificacion",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/FotoIdentificacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"FotoIdentificacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"idFoto\": 1,\r\n        \"foto\": \"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\",\r\n        \"idPersona\": 11\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/FotoIdentificacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"FotoIdentificacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFotoIdentificacionPersona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/FotoIdentificacion/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"FotoIdentificacion",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/FotoIdentificacion/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"FotoIdentificacion",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProbando",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/FotoIdentificacion/getFoto/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"FotoIdentificacion",
+								"getFoto",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Foto Prueba De Vida",
+			"item": [
+				{
+					"name": "agregarFotoPruebaDeVida",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/FotoPruebaDeVida/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"FotoPruebaDeVida",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProbando",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/FotoPruebaDeVida/getFotoPruebaDeVida/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"FotoPruebaDeVida",
+								"getFotoPruebaDeVida",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Incidencia",
+			"item": [
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"descripcion\": \"Informe de incidencia por vandalismo en la puerta principal.\",\r\n  \"fecha\": \"2024-03-27T14:30:00\",\r\n  \"idIncidencia\": 12345,\r\n  \"idRestriccion\": 1,\r\n  \"topico\": \"VictimarioIlocalizable\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Incidencia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Incidencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Incidencia/1/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Incidencia",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Infeccion",
+			"item": [
+				{
+					"name": "listarPorRestriccion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Infraccion/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Infraccion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Infraccion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Infraccion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"distancia\": 25.7,\r\n  \"estadoInfraccion\": \"Abierta\",\r\n  \"fecha\": \"2024-03-27T15:45:30\",\r\n  \"idInfraccion\": 1,\r\n  \"idRestriccion\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Infraccion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Infraccion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Localidad",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Localidad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Localidad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarLocalidadesPorProvincia",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Localidad/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Localidad",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLocalidad",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Localidad/Buscar/16489",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Localidad",
+								"Buscar",
+								"16489"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigoPostal\": 28001,\r\n  \"idLocalidad\": 123,\r\n  \"idProvincia\": 5,\r\n  \"nombre\": \"Salamanca\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Localidad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Localidad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Localidad/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Localidad",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notificacion",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Notificacion/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Notificacion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getNotificacionesApp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Notificacion/App/victima1@victima1.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Notificacion",
+								"App",
+								"victima1@victima1.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getArchivadas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Notificacion/getArchivadas/5/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Notificacion",
+								"getArchivadas",
+								"5",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCantNoVistas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Notificacion/getCantNoVistas/victima1@victima1.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Notificacion",
+								"getCantNoVistas",
+								"victima1@victima1.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getNotificaciones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Notificacion/getNotificaciones/1/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Notificacion",
+								"getNotificaciones",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getNoVistas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Notificacion/getNoVistas/gfgrillo3@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Notificacion",
+								"getNoVistas",
+								"gfgrillo3@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "archivar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "1022\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Notificacion/archivar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Notificacion",
+								"archivar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setVista",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "0",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Notificacion/setVista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Notificacion",
+								"setVista"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Persona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Persona"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Persona/GetById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Persona",
+								"GetById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDamnificadaByDni",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Persona/GetDamnificadaByDni/123321",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Persona",
+								"GetDamnificadaByDni",
+								"123321"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getVictimarioByDni",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Persona/GetVictimarioByDni/987654",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Persona",
+								"GetVictimarioByDni",
+								"987654"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"apellido\": \"García\",\r\n  \"dni\": \"12345678\",\r\n  \"fechaNacimiento\": \"1990-05-15\",\r\n  \"idDireccion\": 1,\r\n  \"idPersona\": 42,\r\n  \"idUsuario\": 72,\r\n  \"nombre\": \"Juan\",\r\n  \"telefono\": \"555-1234\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Persona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Persona"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Persona/42",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Persona",
+								"42"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Provincia",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Provincias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Provincias"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prueba De Vida",
+			"item": [
+				{
+					"name": "getPruebasDeVidaPersona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/PruebaDeVida/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"PruebaDeVida",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPruebasDeVidaApp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/PruebaDeVida/getByMail/agresor2@agresor2.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"PruebaDeVida",
+								"getByMail",
+								"agresor2@agresor2.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"descripcion\": \"Renovación de licencia de conducir\",\r\n  \"estado\": \"Pendiente\",\r\n  \"fecha\": \"2024-03-27T10:00:00\",\r\n  \"idPersonaRestriccion\": 1,\r\n  \"idPruebaDeVida\": 4,\r\n  \"idRestriccion\": 7\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/PruebaDeVida",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"PruebaDeVida"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idPruebaDeVida\": 4,\r\n    \"fecha\": \"2024-03-27T02:42:26.960+0000\",\r\n    \"descripcion\": \"Renovación de licencia de conducir \",\r\n    \"estado\": \"Pendiente\",\r\n    \"idRestriccion\": 7,\r\n    \"idPersonaRestriccion\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/PruebaDeVida/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"PruebaDeVida",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RestriccionDTO",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/RestriccionDTO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"RestriccionDTO"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRestriccionesAdministrativo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/RestriccionDTO/gfgrillo3@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"RestriccionDTO",
+								"gfgrillo3@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByDamnificada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/RestriccionDTO/getByDamnificada/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"RestriccionDTO",
+								"getByDamnificada",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByUsuarioApp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/RestriccionDTO/getByUsuarioApp/agresor2@agresor2.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"RestriccionDTO",
+								"getByUsuarioApp",
+								"agresor2@agresor2.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByVictimario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/RestriccionDTO/getByVictimario/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"RestriccionDTO",
+								"getByVictimario",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vista RestrincionDTO",
+			"item": [
+				{
+					"name": "getRestriccionesAdministrativo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/vistaRestriccionDTO/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"vistaRestriccionDTO",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ubicacion Rutina",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/UbicacionRutina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"UbicacionRutina"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ubicacionRutinaria2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/UbicacionRutina/persona=1/dia=10/hora=00/minutos=00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"UbicacionRutina",
+								"persona=1",
+								"dia=10",
+								"hora=00",
+								"minutos=00"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"idUbicacionRutina\": 6,\r\n        \"latitud\": -34.585733,\r\n        \"longitud\": -58.650988,\r\n        \"fecha\": \"2019-10-09T21:00:00.000+0000\",\r\n        \"idPersona\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/UbicacionRutina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"UbicacionRutina"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ubicacion",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Ubicacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Ubicacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByRestriccion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Ubicacion/getByRestriccion/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Ubicacion",
+								"getByRestriccion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"idUbicacion\": 1,\r\n        \"latitud\": -34.592694,\r\n        \"longitud\": -58.745829,\r\n        \"fecha\": \"2019-11-27T16:04:36.000+0000\",\r\n        \"idPersona\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Ubicacion/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Ubicacion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "estaInfringiendo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ubicacionDamnificada\": {\r\n    \"fecha\": \"2024-03-27T12:15:30\",\r\n    \"idPersona\": 1,\r\n    \"idUbicacion\": 4,\r\n    \"latitud\": 40.7128,\r\n    \"longitud\": -74.0060\r\n  },\r\n  \"ubicacionVictimario\": {\r\n    \"fecha\": \"2024-03-27T12:20:45\",\r\n    \"idPersona\": 2,\r\n    \"idUbicacion\": 7,\r\n    \"latitud\": 40.7306,\r\n    \"longitud\": -73.9352\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Ubicacion/infringe/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Ubicacion",
+								"infringe",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByEmail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Usuario/GetByEmail/victima1@victima1.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Usuario",
+								"GetByEmail",
+								"victima1@victima1.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contrasena\": \"mario\",\r\n  \"email\": \"ejemplo@gmail.com\",\r\n  \"idUsuario\": 10,\r\n  \"rolDeUsuario\": \"SUPERVISOR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Usuario/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Usuario",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contrasena\": \"mario\",\r\n    \"email\": \"ejemplo@gmail.com\",\r\n    \"rolDeUsuario\": \"SUPERVISOR\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Usuario/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Usuario",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginApp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contrasena\": \"mario\",\r\n    \"email\": \"ejemplo@gmail.com\",\r\n    \"rolDeUsuario\": \"SUPERVISOR\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Usuario/loginApp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Usuario",
+								"loginApp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificarUsuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contrasena\": \"mario\",\r\n  \"email\": \"ejemplo@gmail.com\",\r\n  \"idUsuario\": 10,\r\n  \"rolDeUsuario\": \"SUPERVISOR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Usuario/modificarUsuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Usuario",
+								"modificarUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "recuperarContrasena",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contrasena\": \"mario\",\r\n  \"email\": \"ejemplo@gmail.com\",\r\n  \"idUsuario\": 10,\r\n  \"rolDeUsuario\": \"SUPERVISOR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Usuario/recuperarContrasena",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Usuario",
+								"recuperarContrasena"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Restriccion Perimetral",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/RestriccionPerimetral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"RestriccionPerimetral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByAdministrativo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/RestriccionPerimetral/getByAdministrativo/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"RestriccionPerimetral",
+								"getByAdministrativo",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByDamnificada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/RestriccionPerimetral/getByDamnificada/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"RestriccionPerimetral",
+								"getByDamnificada",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByVictimario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/RestriccionPerimetral/getByVictimario/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"RestriccionPerimetral",
+								"getByVictimario",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"distancia\": 10.5,\r\n  \"fechaSentencia\": \"2023-07-15\",\r\n  \"idDamnificada\": 4,\r\n  \"idRestriccion\": 1,\r\n  \"idUsuario\": 1,\r\n  \"idVictimario\": 2\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/RestriccionPerimetral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"RestriccionPerimetral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificarRestriccion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"distancia\": 10.5,\r\n  \"fechaSentencia\": \"2023-07-15\",\r\n  \"idDamnificada\": 4,\r\n  \"idRestriccion\": 1,\r\n  \"idUsuario\": 1,\r\n  \"idVictimario\": 2\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/RestriccionPerimetral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"RestriccionPerimetral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/RestriccionPerimetral/borrar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"RestriccionPerimetral",
+								"borrar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RPLugar",
+			"item": [
+				{
+					"name": "crearNuevoLugar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"distancia\": 100,\r\n   \"direccion\": {\r\n    \"altura\": \"4310\",\r\n    \"calle\": \"Calle\",\r\n    \"departamento\": \"C\",\r\n    \"idDireccion\": 2,\r\n    \"idLocalidad\": 2156,\r\n    \"piso\": 7\r\n  },\r\n  \"idRPLugar\": 3,\r\n  \"idRestriccion\": 3,\r\n  \"latitud\": -34.542663948228935,\r\n  \"longuitud\": -58.71191934414344,\r\n  \"nombre\": \"Algun lugar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/LugaresRestringidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"LugaresRestringidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerTodosLosLugares",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/LugaresRestringidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"LugaresRestringidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenrLugarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/LugaresRestringidos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"LugaresRestringidos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarLugar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"distancia\": 50,\r\n  \"idDireccion\": 1,\r\n  \"idRPLugar\": 1,\r\n  \"idRestriccion\": 1,\r\n  \"latitud\": -34.542663948228935,\r\n  \"longuitud\": -58.71191934414344,\r\n  \"nombre\": \"Plaza de sanmi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/LugaresRestringidos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"LugaresRestringidos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarLugar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/LugaresRestringidos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"LugaresRestringidos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerRPLugarPorIdRestriccion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/LugaresRestringidos/Restriccion/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"LugaresRestringidos",
+								"Restriccion",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
