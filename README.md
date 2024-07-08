@@ -2,6 +2,55 @@
 
 Cuidar Tech es un proyecto dedicado a la prevención de la violencia de género mediante el monitoreo de restricciones perimetrales. Este proyecto se basa en la continuación del proyecto original desarrollado por la Universidad Nacional de General Sarmiento (UNGS), que puedes encontrar [aquí](https://www.ungs.edu.ar/new/cuidar-tech-una-posible-solucion-tecnologica-para-intervenir-en-casos-de-violencia-domestica-contra-las-mujeres). En esta nueva fase, hemos implementado dos funcionalidades clave: pruebas de vida automáticas y predicción de rutinas para prevenir violaciones de restricciones perimetrales. Ademas de que implementamos otras mejores tanto esteticas como funcionales. Este repositorio contiene el backend del proyecto, podes encontrar el frontend [aquí](https://github.com/MatiasM12/Cuidar-Tech-Frontend) y la app movil [aqui](https://github.com/MatiasM12/Cuidar-Tech-App).
 
+<div >
+<h2 >Demos 👨🏻‍💻</h2>
+<table align="left" >
+<tr border="none">
+  <td width="25%" align="center">
+    <p align="center">
+     <a href="https://youtu.be/aKQAXYPiSjk" title="Go to Source">
+        <img align="center" width=100% src="https://github.com/MatiasM12/Cuidar-Tech-Frontend/assets/86579814/6f3b262d-96a2-4e0c-bc93-86c2926e8c7b"   alt="VIDEO" /></a>
+      </p>
+    <p align="center">
+        <a href="https://youtu.be/aKQAXYPiSjk" target="blank"><img align="center" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"  /></a>
+      <a href="https://github.com/MatiasM12/Cuidar-Tech-Frontend" target="blank"><img align="center" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="" /></a>
+    </p>       
+  </td> 
+  <td width="25%" align="center">
+    <p align="center">
+     <a href="https://youtu.be/BMFX0KDdOmg" title="Go to Source">
+        <img align="center" width=100% src="https://github.com/MatiasM12/Cuidar-Tech-Frontend/assets/86579814/cbaebad1-cecb-4491-9722-f38dbf9c86e4"   alt="VIDEO" /></a>
+      </p>
+    <p align="center">
+        <a href="https://youtu.be/BMFX0KDdOmg" target="blank"><img align="center" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"  /></a>
+      <a href="https://github.com/MatiasM12/Cuidar-Tech-Frontend" target="blank"><img align="center" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="" /></a>
+    </p>       
+  </td> 
+    <td width="25%" align="center">
+    <p align="center">
+     <a href="https://youtu.be/-thK5VzImiQ" title="Go to Source">
+        <img align="center" width=100% src="https://github.com/MatiasM12/Cuidar-Tech-Frontend/assets/86579814/79cf2b8b-ad89-489b-bc2e-d37cb9fd4fc3" alt="VIDEO" /></a>
+      </p>
+    <p align="center">
+        <a href="https://youtu.be/-thK5VzImiQ" target="blank"><img align="center" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"  /></a>
+      <a href="https://github.com/MatiasM12/Cuidar-Tech-Frontend" target="blank"><img align="center" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="" /></a>
+    </p>       
+  </td> 
+   <td width="25%" align="center">
+    <p align="center">
+     <a href="https://youtu.be/US0ZI8701D8" title="Go to Source">
+        <img align="center" width=100%  src="https://github.com/MatiasM12/Cuidar-Tech-App/assets/86579814/81c823d3-7ed7-43f6-b227-dcdf07ba5b3e"   alt="VIDEO" /></a>
+      </p>
+    <p align="center">
+        <a href="https://youtu.be/US0ZI8701D8" target="blank"><img align="center" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"  /></a>
+      <a href="https://github.com/MatiasM12/Cuidar-Tech-App" target="blank"><img align="center" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="" /></a>
+    </p>       
+  </td> 
+</tr>
+</table>
+</div>
+<br><br>
+
 ## Instrucciones para correr el repo 👨‍🏫
 
 1. **Crear una base de datos (MySQL):** Crea una base de datos llamada `vdg` en tu servidor MySQL junto a un usario vdgpps y una contraseña vdgpps2019.
